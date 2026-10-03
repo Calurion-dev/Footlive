@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "FootLive 2026",
+    "slug": "FootLive2026",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "processing"]
+      }
+    },
+    "android": {
+      "package": "com.footlive2026.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1B5E20",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "WAKE_LOCK",
+        "SCHEDULE_EXACT_ALARM",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification_icon.png",
+          "color": "#1B5E20",
+          "defaultChannel": "match-summary",
+          "sounds": []
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "https://api-football-v1.p.rapidapi.com/v3",
+      "apiHost": "api-football-v1.p.rapidapi.com"
+    }
+  }
+}
